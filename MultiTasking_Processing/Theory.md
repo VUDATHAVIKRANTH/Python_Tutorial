@@ -95,6 +95,7 @@ if __name__ == "__main__":
 * Uses a **single thread and single process**.
 * Runs tasks **concurrently** by switching between them when one is waiting (like non-blocking I/O).
 * Based on **event loop** and **coroutines**.
+* corounties work manner of play and pause mechanism means if any part of waiting for a task1 is waiting for external response it will went to pause state and the task2 will complete it process until the task1 comes to active state
 * Perfect for handling **thousands of simultaneous I/O tasks** efficiently.
 
 🧩 **Example:**
